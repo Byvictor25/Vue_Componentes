@@ -1,47 +1,37 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+import AppMenu from './components/AppMenu.vue';
+import ProductsTable from './components/ProductsTable.vue';
+import AddProduct from './components/AddProduct.vue';
+import ProductItem from './components/ProductItem.vue';
+import ErrorMessage from './components/ErrorMessage.vue';
+import { store } from "./store";
+
+export default {
+  components: {
+        AppMenu,
+        ProductsTable,
+        ProductItem,
+        AddProduct,
+        ErrorMessage,
+  },
+  mounted() {
+    store.loadCategorias(),
+    store.loadProductos()
+  }
+};
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+<app-menu></app-menu>
+<div class="container">
+  <error-message></error-message>
+  <products-table></products-table>
+  <add-product></add-product>
+</div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<style>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 </style>

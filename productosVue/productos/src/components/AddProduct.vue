@@ -42,7 +42,6 @@ export default {
                     <div class="form-group">
                         <label for="newprod-cat">Categoría:</label>
                         <select class="form-control" id="newprod-cat" v-model="newProd.category" required>
-                            <option value="">--- Selecciona categoría ---</option>
                             <option
                             v-for="cat in categorias"
                             :key="cat.id"

@@ -88,7 +88,7 @@ export default {
                         <span class="error"></span>
                     </div>
                     <br>
-                    <button type="submit" id="newprod-submit" class="btn btn-default btn-dark">Añadir</button>
+                    <button type="submit" id="newprod-submit" class="btn btn-default btn-dark">Guardar</button>
                     <button type="reset" class="btn btn-danger">Reset</button>
                 </fieldset>
             </form>

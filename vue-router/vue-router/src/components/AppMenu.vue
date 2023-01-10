@@ -24,6 +24,7 @@ export default {
 					<router-link to="/categorias" class="nav-link">Categorías</router-link>
 					<router-link to="/newProduct" class="nav-link">Añadir producto</router-link>
 					<router-link to="/newCategory" class="nav-link">Añadir categoria</router-link>
+					<router-link to="/acercaDe" class="nav-link">Acerca de...</router-link>
 				</div>
 			</div>
 		</div>

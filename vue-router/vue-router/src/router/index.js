@@ -5,6 +5,7 @@ import ProductItem from '../components/ProductItem.vue';
 import CategoryItem from '../components/CategoryItem.vue';
 import AddProduct from '../components/AddProduct.vue';
 import AddCategory from '../components/AddCategory.vue';
+import AcercaDe from '../components/AcercaDe.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/newCategory',
       name: 'addCategory',
       component: AddCategory
+    },
+    {
+      path: '/acercaDe',
+      name: 'acercaDe',
+      component: AcercaDe
     },
     {
       path: '/edit/:id',

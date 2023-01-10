@@ -28,7 +28,7 @@ export default {
         <td>{{ elem.name }}</td>
         <td>{{ elem.category }}</td>
         <td>{{ elem.units }}</td>
-        <td>{{ elem.price }}</td>
+        <td>{{ elem.price.toFixed(2) }}</td>
         <td>{{ elem.price * elem.units}} €</td>
         <td>
             <button @click="addUnit" class="btn btn-warning">

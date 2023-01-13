@@ -1,4 +1,5 @@
 <script>
+
 export default {
     data() {
         return {
@@ -18,11 +19,9 @@ export default {
 			<span class="navbar-brand" href="#">Almacén ACME</span>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<router-link to="/" class="nav-link">Productos</router-link>
-					<router-link to="/categorias" class="nav-link">Categorías</router-link>
-					<router-link to="/newProduct" class="nav-link">Añadir producto</router-link>
-					<router-link to="/newCategory" class="nav-link">Añadir categoria</router-link>
-					<router-link to="/acercaDe" class="nav-link">Acerca de...</router-link>
+					<router-link to="/" class="nav-link">Tareas</router-link>
+					<router-link to="/addTarea" class="nav-link">Añadir Tarea</router-link>
+					<router-link to="/delTareas" class="nav-link">Borrar Tareas</router-link>
 				</div>
 			</div>
 		</div>

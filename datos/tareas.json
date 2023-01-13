@@ -1,0 +1,19 @@
+{
+  "tareas": [
+    {
+      "title": "Aprobar todas",
+      "done": true,
+      "id": 1
+    },
+    {
+      "title": "Ganar la champions",
+      "done": false,
+      "id": 2
+    },
+    {
+      "title": "Llegar a diamente en Valorant",
+      "done": false,
+      "id": 3
+    }
+  ]
+}
